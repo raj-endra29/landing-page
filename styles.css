@@ -1,0 +1,780 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #F8F7F3;
+    color: #1A1A1A;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation */
+.nav-menu {
+    background-color: #243759;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 138px;
+    gap: 140px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90.78px;
+    height: 54.47px;
+    filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.5));
+    display: block;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.nav-link {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222em;
+    letter-spacing: 0.2%;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    color: #BC9B2F;
+}
+
+.nav-link:hover {
+    color: #BC9B2F;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    height: 618px;
+    background-image: url('images/hero-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 245px 138px 56px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.hero-title {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 1.1em;
+    letter-spacing: -1%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.hero-body {
+    background-color: rgba(36, 55, 89, 0.6);
+    border-radius: 8px;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-body p {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.4em;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+}
+
+.primary-button {
+    background-color: #BC9B2F;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 1em;
+    letter-spacing: 0.5%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #131F33;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-button:hover {
+    background-color: #8B741F;
+}
+
+/* Client Section */
+.client-section {
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.client-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    padding: 120px 138px;
+}
+
+.client-title {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.4em;
+    color: #1F304D;
+    text-align: center;
+    width: 100%;
+}
+
+.client-logos {
+    width: 1162px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-logos img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #F8F7F3;
+    width: 100%;
+}
+
+.wcu-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 120px 138px;
+}
+
+.wcu-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 1.2em;
+    letter-spacing: -0.5%;
+    text-align: center;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+.section-description {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.429em;
+    color: #666666;
+    text-align: center;
+    margin: 0;
+}
+
+.wcu-cards {
+    display: grid;
+    grid-template-columns: 326px 326px;
+    gap: 24px;
+    width: 100%;
+    max-width: 676px;
+    justify-content: center;
+}
+
+.wcu-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 326px;
+}
+
+.card-title {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.3em;
+    color: #8B741F;
+    margin: 0;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 114px;
+}
+
+.card-subtitle {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222em;
+    letter-spacing: 0.2%;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+.card-text {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #666666;
+    margin: 0;
+    max-width: 276px;
+}
+
+/* Featured Projects Section */
+.featured-projects {
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.projects-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 120px 138px;
+}
+
+.projects-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 777px;
+    text-align: center;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 339px;
+    flex-shrink: 0;
+}
+
+.project-image {
+    width: 339px;
+    height: 254px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.project-title {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.4em;
+    color: #1A1A1A;
+    margin: 0 0 4px 0;
+}
+
+.project-description {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #666666;
+    margin: 0;
+}
+
+/* Feedback Section */
+.feedback-section {
+    background-color: #F8F7F3;
+    width: 100%;
+}
+
+.feedback-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+    padding: 120px 138px;
+}
+
+.feedback-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    align-self: stretch;
+}
+
+.feedback-title {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 1.2em;
+    letter-spacing: -0.5%;
+    text-align: center;
+    color: #BC9B2F;
+    width: 100%;
+    margin: 0;
+}
+
+.feedback-quote {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.283em;
+    color: #131F33;
+    width: 940px;
+    max-width: 100%;
+    text-align: left;
+    margin: 0;
+}
+
+.feedback-author {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 159px;
+    align-self: flex-end;
+}
+
+.author-name {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.4em;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+.author-role {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: #666666;
+    margin: 0;
+}
+
+/* View All Projects Section */
+.view-projects-section {
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.view-projects-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 120px 138px;
+}
+
+.view-projects-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 576px;
+    flex-shrink: 0;
+}
+
+.view-projects-title {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1.083em;
+    color: #1A1A1A;
+    margin: 0;
+    text-align: left;
+}
+
+.view-projects-description {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.556em;
+    color: #666666;
+    margin: 0;
+    text-align: left;
+}
+
+.secondary-button {
+    background-color: #8B741F;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 24px;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 1em;
+    letter-spacing: 0.5%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.secondary-button:hover {
+    background-color: #BC9B2F;
+}
+
+/* Footer */
+.footer {
+    background-color: #131F33;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 64px 138px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.footer-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.footer-logo {
+    width: 47px;
+    height: 28px;
+    filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.5));
+    display: block;
+    flex-shrink: 0;
+}
+
+.footer-company-name {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222em;
+    letter-spacing: 0.2%;
+    color: #BC9B2F;
+    margin: 0;
+}
+
+.footer-description {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    width: 384px;
+    margin: 0;
+}
+
+.footer-heading {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.footer-links li {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 350;
+    font-size: 12px;
+    line-height: 1.4em;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #BC9B2F;
+}
+
+.footer-border {
+    width: 100%;
+    border-top: 1px solid #E2E6EF;
+    padding-top: 32px;
+}
+
+.footer-copyright {
+    width: 100%;
+    text-align: center;
+}
+
+.footer-copyright p {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 350;
+    font-size: 12px;
+    line-height: 1.4em;
+    color: #E8E8E8;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+    .nav-container,
+    .hero-content,
+    .client-container,
+    .wcu-container,
+    .projects-container,
+    .feedback-container,
+    .view-projects-container,
+    .footer-container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-container {
+        padding: 24px 40px;
+        gap: 40px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-content {
+        padding: 180px 40px 40px;
+    }
+
+    .wcu-cards {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .wcu-card {
+        width: 100%;
+        max-width: 326px;
+    }
+
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 339px;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .feedback-quote {
+        width: 100%;
+    }
+
+    .view-projects-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .view-projects-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .view-projects-title,
+    .view-projects-description {
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nav-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-body p {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .client-container,
+    .wcu-container,
+    .projects-container,
+    .feedback-container,
+    .view-projects-container,
+    .footer-container {
+        padding: 60px 20px;
+    }
+
+    .client-logos {
+        width: 100%;
+    }
+
+    .projects-header {
+        width: 100%;
+    }
+
+    .view-projects-text {
+        width: 100%;
+    }
+
+    .footer-description {
+        width: 100%;
+    }
+}
